@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.FirstActivity">
+
+        <!-- Поле вводу - Водень -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_hp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@android:color/holo_green_dark"
+            app:hintTextColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Водень (H) %"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Поле вводу - Вуглець -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_cp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@android:color/holo_green_dark"
+            app:hintTextColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_hp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_cp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Вуглець (C) %"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Поле вводу - Сірка -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@android:color/holo_green_dark"
+            app:hintTextColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_cp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Сірка (S) %"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Поле вводу - Азот -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_np"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@android:color/holo_green_dark"
+            app:hintTextColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_np"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Азот (N) %"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Поле вводу - Кисень -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_op"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@android:color/holo_green_dark"
+            app:hintTextColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_np">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_op"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Кисень (O) %"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Поле вводу - Волога -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_wp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@android:color/holo_green_dark"
+            app:hintTextColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_op">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_wp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Волога (W) %"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Поле вводу - Зола -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_ap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeColor="@android:color/holo_green_dark"
+            app:hintTextColor="@android:color/holo_green_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_wp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_ap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Зола (A) %"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Кнопка - Обчислити -->
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Обчислити"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_ap" />
+
+        <!-- Текстове поле - для помилок (якщо поля пусті, або одне з...) -->
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calculate_button" />
+
+        <!-- Текстове поле - результати обчислень -->
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calculate_button" />
+
+        <!-- Кнопка - перейти на головну сторінку -->
+        <Button
+            android:id="@+id/go_to_main_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Назад"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/result_text"
+            app:layout_constraintVertical_bias="0.725" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
